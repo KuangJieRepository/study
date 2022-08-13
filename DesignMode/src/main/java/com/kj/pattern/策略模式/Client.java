@@ -8,7 +8,8 @@ public class Client {
     public static void main(String[] args) {
         SalesMan salesMan = new SalesMan(Strategy.STRATEGYA);
         salesMan.salesManShow();
-
+        salesMan = new SalesMan(Strategy.STRATEGYB);
+        salesMan.salesManShow();
 
         Strategy strategya = Strategy.STRATEGYA;
         Strategy strategya2 = Strategy.STRATEGYA;
