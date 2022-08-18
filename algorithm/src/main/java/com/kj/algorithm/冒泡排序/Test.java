@@ -17,5 +17,9 @@ public class Test {
         System.out.println(Arrays.toString(ins));
 
 
+        Integer[] ins3 = new Integer[]{6, 5, 4, 3, 2, 1};
+        BubbleSort2.sort(ins3);
+        System.out.println(Arrays.toString(ins));
+
     }
 }

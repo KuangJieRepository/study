@@ -1,28 +1,20 @@
-package com.kj.algorithm.选择排序;
+package com.kj.algorithm.冒泡排序;
 
 /**
  * @Author: kj
  * @Date: 2022/08/17/14:45
- * 选择排序
+ * 冒泡排序
  * 需要排 n-1 趟
- *
- *
  */
-public class SelectionSort {
+public class BubbleSort2 {
 
-    /**
-     * i < comparable.length - 1  就是到倒数第二个元素结束，
-     */
     public static void sort(Comparable[] comparable) {
-
         for (int i = 0; i < comparable.length - 1; i++) {
-            int minIndex = i;
-            for (int j = i + 1; j < comparable.length ; j++) {
-                if (compare(comparable[minIndex], comparable[j])) {
-                    minIndex = j;
+            for (int j = i; j < comparable.length - 1; j++) {
+                if (compare(comparable[j], comparable[j + 1])) {
+                    exchange(comparable, j, j + 1);
                 }
             }
-            exchange(comparable, minIndex, i);
         }
     }
 
@@ -32,7 +24,6 @@ public class SelectionSort {
      * > 0 ：从小到大排序
      */
     public static boolean compare(Comparable p, Comparable s) {
-//        return p.compareTo(s) > 0;
         return p.compareTo(s) < 0;
     }
 

@@ -30,15 +30,15 @@ public class BubbleSort {
     /**
      * 数据交换
      *
-     * @param comparables
+     * @param comparable
      * @param i
      * @param j
      */
-    public static void exchange(Comparable[] comparables, int i, int j) {
+    public static void exchange(Comparable[] comparable, int i, int j) {
         Comparable temp;
-        temp = comparables[i];
-        comparables[i] = comparables[j];
-        comparables[j] = temp;
+        temp = comparable[i];
+        comparable[i] = comparable[j];
+        comparable[j] = temp;
     }
 
 }
